@@ -5,7 +5,9 @@ Create a laser-based security system that uses laser beams to create a perimeter
 The Laser-Based Security System is a sophisticated security solution designed to protect areas, assets, or premises from unauthorized access. It employs laser beams to create an invisible security barrier, and when this barrier is breached, it triggers an alarm, alerting security personnel or authorities. This system offers a highly effective and covert means of enhancing security and preventing unauthorized entry.
 
 # Key Components:
+
 Laser Emitters: High-intensity laser modules strategically placed to form the security perimeter.
+
 Laser Receivers: Sensors or photodetectors that receive and monitor the laser beams.
 Control Unit: A central processing unit that manages the system, processes sensor data, and triggers alarms.
 Alarm System: Alarms, sirens, or alerts that activate upon a breach.
