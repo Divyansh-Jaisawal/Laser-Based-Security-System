@@ -9,10 +9,15 @@ The Laser-Based Security System is a sophisticated security solution designed to
 Laser Emitters: High-intensity laser modules strategically placed to form the security perimeter.
 
 Laser Receivers: Sensors or photodetectors that receive and monitor the laser beams.
+
 Control Unit: A central processing unit that manages the system, processes sensor data, and triggers alarms.
+
 Alarm System: Alarms, sirens, or alerts that activate upon a breach.
+
 Security Cameras: Optional cameras for visual monitoring and recording.
+
 User Interface: A user-friendly interface for system configuration, status monitoring, and event logging.
+
 
 # How It Works:
 Laser Barrier: The system establishes an invisible laser barrier by emitting laser beams across the protected area.
