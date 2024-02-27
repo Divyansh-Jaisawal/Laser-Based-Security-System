@@ -1,0 +1,42 @@
+const int laserPin = 7;     // Pin connected to the laser module
+const int ldrPin = A0;      // Pin connected to the LDR sensor
+const int buzzerPin = 8;    // Pin connected to the buzzer
+
+int ldrValue;               // Variable to store LDR sensor value
+
+void setup() {
+  pinMode(laserPin, OUTPUT);
+  pinMode(buzzerPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Turn on the laser
+  digitalWrite(laserPin, HIGH);
+  delay(100); // Allow time for the laser to stabilize
+
+  // Read the value from the LDR
+  ldrValue = analogRead(ldrPin);
+  Serial.print("LDR Value: ");
+  Serial.println(ldrValue);
+
+  // If the LDR value drops below a threshold, it means the laser beam is blocked
+  if (ldrValue < 100) {  // Adjust threshold as needed
+    Serial.println("Intruder detected!");
+    activateAlarm();
+  } else {
+    Serial.println("Area is secure.");
+  }
+
+  // Turn off the laser to conserve power and avoid heating
+  digitalWrite(laserPin, LOW);
+
+  delay(1000);  // Adjust delay according to your needs
+}
+
+void activateAlarm() {
+  // Activate the buzzer to signal intrusion
+  tone(buzzerPin, 1000);  // You can adjust the frequency and duration as needed
+  delay(1000);            // Adjust the duration of the alarm sound
+  noTone(buzzerPin);
+}
